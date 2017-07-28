@@ -6,7 +6,7 @@ SitemapGenerator::Sitemap.sitemaps_path = "sitemaps/"
 SitemapGenerator::Interpreter.send :include, SitemapHelper
 
 SitemapGenerator::Sitemap.create do
-  start = 8000000
+  start = 0
   finished = false
   puts "Generating Sitemap in chunks of #{CHUNK_SIZE}..."
 
