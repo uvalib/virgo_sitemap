@@ -2,7 +2,7 @@ require 'httparty'
 require_relative 'sitemap_helper'
 
 SitemapGenerator::Sitemap.default_host = "https://search.lib.virginia.edu"
-SitemapGenerator::Sitemap.sitemaps_path = "sitemaps/"
+SitemapGenerator::Sitemap.sitemaps_path = "Sitemaps/"
 SitemapGenerator::Interpreter.send :include, SitemapHelper
 
 SitemapGenerator::Sitemap.create do
